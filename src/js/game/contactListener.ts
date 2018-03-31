@@ -93,6 +93,7 @@ export class ListenerOffline extends b2ContactListener {
             let message = {
                 frames: this.game.frame,
             };
+            eventBus.emit('game', 'win');
             eventBus.emit('game', 'finish', {});
         }
     }

@@ -24,8 +24,15 @@ export default class Win extends BaseOverlay {
       router.go(ViewService.ViewPaths.offline.lobbyPage) :
       router.go(ViewService.ViewPaths.online.lobbyPage));
 
-    (document.querySelector('.main-block__frame__score') as HTMLElement).innerText = `Score: ${data.score}`;
-    (document.querySelector('.main-block__frame__time') as HTMLElement).innerText = `Time left: ${data.time}`;
+    if (!location.pathname.startsWith('/offline')) {
+      (document.querySelector('.main-block__frame__score') as HTMLElement).innerText = `Score: ${data.score}`;
+      (document.querySelector('.main-block__frame__score') as HTMLElement).style.display = 'flex';
+      (document.querySelector('.main-block__frame__time') as HTMLElement).innerText = `Time left: ${data.time}`;
+      (document.querySelector('.main-block__frame__time') as HTMLElement).style.display = 'flex';
+    } else {
+      (document.querySelector('.main-block__frame__score') as HTMLElement).style.display = 'none';
+      (document.querySelector('.main-block__frame__time') as HTMLElement).style.display = 'none';
+    }
   }
 
   public async stop(): Promise<void> {

@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frontend-park-mail-ru/2017_2_42.git"
+    "url": "git+https://github.com/ArturBmstu/2017_2_42.git"
   },
   "author": "42 team",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/frontend-park-mail-ru/2017_2_42/issues"
+    "url": "https://github.com/ArturBmstu/2017_2_42/issues"
   },
-  "homepage": "https://github.com/frontend-park-mail-ru/2017_2_42#readme",
+  "homepage": "https://github.com/ArturBmstu/2017_2_42#readme",
   "dependencies": {
     "@types/fabric": "^1.5.27",
     "@types/fontfaceobserver": "0.0.6",

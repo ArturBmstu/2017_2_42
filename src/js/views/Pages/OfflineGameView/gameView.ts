@@ -157,7 +157,7 @@ export default class OfflineGameView extends BaseView {
     // this.settingsButton = new Button(document.querySelector('.main-frame__header__settings-button') as HTMLElement);
     // this.settingsButton.onClick(() => this.router.showOverlay(ViewService.OverlayNames.application.settings));
     this.muteButton = new SoundButton(document
-      .querySelector('.main-frame__header__sound-button') as HTMLElement);
+      .querySelector('.main_frame__header__sound-button') as HTMLElement);
     // this.readyButton = new Button(document.querySelector('.main-frame__header__ready-button__not-ready') as HTMLElement);
     // this.readyButton.onClick(() => {
     //     eventBus.emit('game', 'subscribe');

@@ -58,6 +58,9 @@ export class Timer extends Object {
         this.running = false;
         eventBus.emit('timer', <string>TimerEvents.finished, this);
         clearInterval(this.intervalID);
+        if (location.pathname.startsWith('/offline')) {
+          eventBus.emit('game', 'lose');
+        }
         this.reset();
     }
 

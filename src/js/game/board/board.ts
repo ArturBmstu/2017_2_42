@@ -127,12 +127,21 @@ export class Board {
     }
 
     public setOwn(): void {
-        for (let body of this.bodies.values()) {
+        if (location.pathname.startsWith('/online')) {
+          for (let body of this.bodies.values()) {
             if (body.initOptions.playerID !== null) {
-                body.owned = this.game.playerID === body.initOptions.playerID;
+              body.owned = this.game.playerID === body.initOptions.playerID;
             }
             body.initOptions.selectable = body.owned;
-        }
+          }
+        } else {
+          for (let body of this.bodies.values()) {
+            if (body.initOptions.playerID !== null) {
+              body.owned = true;
+            }
+            body.initOptions.selectable = body.owned;
+          }
+          }
     }
 
     public create(world: b2World): void {
@@ -179,7 +188,6 @@ export class Board {
 
     public setPlayersColor() {
         for (let body of this.bodies.values()) {
-            console.log(body.owned);
             if (body.owned !== undefined) {
                 if (body.owned) {
                     body.setColorFilter('#2E97BD');

@@ -10,7 +10,7 @@ import {BucketBody, CircleBody} from '../body/body';
 import {Message, SnapMessage, StartMessage, SubscribeMessage} from './Message';
 import {GameService} from './gameService';
 import {FinishState, GameState, InitState, LoadState, PrepareState, RunningState} from './gameState';
-import {Timer} from './timer';
+import {Timer, TimerEvents} from './timer';
 
 
 export interface MapMeta {
@@ -93,16 +93,18 @@ export class GameOnline implements Game {
           eventBus.off('game', <string>GameEvents.subscribe, cb);
         };
         eventBus.on('game', <string>GameEvents.subscribe, cb);
-        eventBus.on('game', <string>GameEvents.start, () => {
-            let startMsg = new StartMessage(game);
-            startMsg.HandleRequest();
-        });
+        const startcb = () => {
+          eventBus.off('game', <string>GameEvents.start, startcb);
+          let startMsg = new StartMessage(game);
+          startMsg.HandleRequest();
+        };
+        eventBus.on('game', <string>GameEvents.start, startcb );
         eventBus.on('game', <string>GameEvents.quit, () => {
             this.gameService.closed = true;
             this.gameService.closeConnection();
             game = null;
         });
-        eventBus.on('timer', GameEvents.finish, () => {
+        eventBus.on('timer', TimerEvents.finished, () => {
             this.board.timerText.text = '00.00';
         });
     }

@@ -8,7 +8,7 @@ import {Message, SnapMessage, SubscribeMessage} from './Message';
 import {Game} from './gameOnline';
 import {GameService} from './gameService';
 import {FinishState, GameState, InitState, LoadState, PrepareState, RunningState} from './gameState';
-import {Timer} from './timer';
+import {Timer, TimerEvents} from './timer';
 
 export interface MapMeta {
   id: number;
@@ -59,9 +59,19 @@ export class GameOffline implements Game {
       eventBus.off('game', <string>GameEvents.subscribe, cb);
     };
     eventBus.on('game', <string>GameEvents.subscribe, cb);
-    eventBus.on('game', <string>GameEvents.start, () => {
+
+    const startcb = () => {
       this.state = new RunningState(this);
       this.start();
+      eventBus.off('game', <string>GameEvents.start, startcb);
+    };
+    eventBus.on('game', <string>GameEvents.start, startcb);
+
+    eventBus.on('timer', TimerEvents.finished, () => {
+      if (location.pathname.startsWith('/offline')) {
+        eventBus.emit('game', 'lose');
+      }
+      this.board.timerText.text = '00.00';
     });
   }
 
