@@ -1,4 +1,4 @@
-import {b2World} from 'box2d.ts/Box2D/Box2D/Dynamics/b2World';
+import {b2World} from '@flyover/box2d/Box2D/Box2D/Dynamics/b2World';
 import 'fabric';
 import eventBus from '../../modules/eventBus';
 import {Body} from '../body/body';

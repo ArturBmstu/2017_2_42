@@ -1,4 +1,4 @@
-import {b2BodyType} from 'box2d.ts/Box2D/Box2D/Dynamics/b2Body';
+import {b2BodyType} from '@flyover/box2d/Box2D/Box2D/Dynamics/b2Body';
 /**
  * Created by zwirec on 03.12.2017.
  */

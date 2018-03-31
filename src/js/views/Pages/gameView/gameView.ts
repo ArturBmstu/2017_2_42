@@ -12,7 +12,7 @@ interface Size {
 }
 
 const GameViewTmpl = require('./gameView.pug') as TemplateRenderFunc;
-import {b2Vec2} from 'box2d.ts/Box2D/Box2D/Common/b2Math';
+import {b2Vec2} from '@flyover/box2d/Box2D/Box2D/Common/b2Math';
 import SoundButton from '../../../blocks/Buttons/SoundButton';
 import {assignScaleConf, SCALE_COEFF_X, SCALE_COEFF_Y} from '../../../game/board/config';
 import User from '../../../models/user';

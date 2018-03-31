@@ -1,4 +1,4 @@
-import {b2Vec2} from 'box2d.ts/Box2D/Box2D/Common/b2Math';
+import {b2Vec2} from '@flyover/box2d/Box2D/Box2D/Common/b2Math';
 import eventBus from '../../modules/eventBus';
 import {SCALE_COEFF_X, SCALE_COEFF_Y} from '../board/config';
 import {Game, GameOnline} from './gameOnline';

@@ -1,12 +1,12 @@
-import {b2CircleShape} from 'box2d.ts/Box2D/Box2D/Collision/Shapes/b2CircleShape';
-import {b2Vec2} from 'box2d.ts/Box2D/Box2D/Common/b2Math';
-import {b2_pi} from 'box2d.ts/Box2D/Box2D/Common/b2Settings';
-import {b2Body, b2BodyDef, b2BodyType} from 'box2d.ts/Box2D/Box2D/Dynamics/b2Body';
-import {b2FixtureDef} from 'box2d.ts/Box2D/Box2D/Dynamics/b2Fixture';
-import {b2World} from 'box2d.ts/Box2D/Box2D/Dynamics/b2World';
+import {b2CircleShape} from '@flyover/box2d/Box2D/Box2D/Collision/Shapes/b2CircleShape';
+import {b2Vec2} from '@flyover/box2d/Box2D/Box2D/Common/b2Math';
+import {b2_pi} from '@flyover/box2d/Box2D/Box2D/Common/b2Settings';
+import {b2Body, b2BodyDef, b2BodyType} from '@flyover/box2d/Box2D/Box2D/Dynamics/b2Body';
+import {b2FixtureDef} from '@flyover/box2d/Box2D/Box2D/Dynamics/b2Fixture';
+import {b2World} from '@flyover/box2d/Box2D/Box2D/Dynamics/b2World';
 import 'fabric';
 
-import {b2PolygonShape} from 'box2d.ts/Box2D/Box2D/Collision/Shapes/b2PolygonShape';
+import {b2PolygonShape} from '@flyover/box2d/Box2D/Box2D/Collision/Shapes/b2PolygonShape';
 import {SCALE_COEFF_X} from '../board/config';
 import {
     BucketConfig, CircleBucketConfig, InitOptions, JSONBody, KeyBodies, METERS_TO_PIXEL, Options,

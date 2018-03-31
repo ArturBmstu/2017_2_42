@@ -1,5 +1,5 @@
-import {b2Vec2} from 'box2d.ts/Box2D/Box2D/Box2D';
-import {b2BodyType} from 'box2d.ts/Box2D/Box2D/Dynamics/b2Body';
+import {b2Vec2} from '@flyover/box2d/Box2D/Box2D/Box2D';
+import {b2BodyType} from '@flyover/box2d/Box2D/Box2D/Dynamics/b2Body';
 import 'fabric';
 import {Board} from '../board/board';
 import {assignScaleConf, SCALE_COEFF_X, SCALE_COEFF_Y} from '../board/config';

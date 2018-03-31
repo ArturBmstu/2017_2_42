@@ -1,5 +1,5 @@
-import {b2Vec2} from 'box2d.ts/Box2D/Box2D/Common/b2Math';
-import {b2World} from 'box2d.ts/Box2D/Box2D/Dynamics/b2World';
+import {b2Vec2} from '@flyover/box2d/Box2D/Box2D/Common/b2Math';
+import {b2World} from '@flyover/box2d/Box2D/Box2D/Dynamics/b2World';
 import eventBus from '../../modules/eventBus';
 import {Board} from '../board/board';
 import {assignScaleConf, SCALE_COEFF_X, SCALE_COEFF_Y} from '../board/config';

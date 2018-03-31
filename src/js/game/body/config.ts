@@ -1,5 +1,5 @@
-import {b2Vec2} from 'box2d.ts/Box2D/Box2D/Common/b2Math';
-import {b2BodyType} from 'box2d.ts/Box2D/Box2D/Dynamics/b2Body';
+import {b2Vec2} from '@flyover/box2d/Box2D/Box2D/Common/b2Math';
+import {b2BodyType} from '@flyover/box2d/Box2D/Box2D/Dynamics/b2Body';
 export const PIXEL_TO_METERS = 1 / 30;
 export const METERS_TO_PIXEL = 30;
 

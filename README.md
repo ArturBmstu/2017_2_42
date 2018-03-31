@@ -4,8 +4,8 @@
 Игра-головоломка
 
 
-## Master Branch [![Build Status](https://travis-ci.org/frontend-park-mail-ru/2017_2_42.svg?branch=master)](https://travis-ci.org/frontend-park-mail-ru/2017_2_42)
-## Sandbox branch [![Build Status](https://travis-ci.org/frontend-park-mail-ru/2017_2_42.svg?branch=sandbox)](https://travis-ci.org/frontend-park-mail-ru/2017_2_42)
+## Master Branch [![Build Status](https://travis-ci.org/ArturBmstu/2017_2_42.svg?branch=master)](https://travis-ci.org/ArturBmstu/2017_2_42)
+## Sandbox branch [![Build Status](https://travis-ci.org/ArturBmstu/2017_2_42.svg?branch=sandbox)](https://travis-ci.org/ArturBmstu/2017_2_42)
 
 
 ### [Application](https://physicsio.tech)

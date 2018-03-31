@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/ArturBmstu/2017_2_42#readme",
   "dependencies": {
+    "@flyover/box2d": "github:flyover/box2d.ts",
     "@types/fabric": "^1.5.27",
     "@types/fontfaceobserver": "0.0.6",
     "@types/webaudioapi": "0.0.27",
-    "box2d.ts": "flyover/box2d.ts",
     "cookie-parser": "^1.4.3",
     "css-loader": "^0.28.7",
     "eslint": "^4.7.2",

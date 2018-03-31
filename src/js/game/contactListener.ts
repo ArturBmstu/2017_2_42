@@ -1,6 +1,6 @@
-import {b2Manifold} from 'box2d.ts/Box2D/Box2D/Collision/b2Collision';
-import {b2Contact} from 'box2d.ts/Box2D/Box2D/Dynamics/Contacts/b2Contact';
-import {b2ContactImpulse, b2ContactListener} from 'box2d.ts/Box2D/Box2D/Dynamics/b2WorldCallbacks';
+import {b2Manifold} from '@flyover/box2d/Box2D/Box2D/Collision/b2Collision';
+import {b2Contact} from '@flyover/box2d/Box2D/Box2D/Dynamics/Contacts/b2Contact';
+import {b2ContactImpulse, b2ContactListener} from '@flyover/box2d/Box2D/Box2D/Dynamics/b2WorldCallbacks';
 import eventBus from '../modules/eventBus';
 import {CircleBody} from './body/body';
 import {KeyBodies} from './body/config';

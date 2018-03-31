@@ -1,6 +1,6 @@
-import {b2Vec2} from 'box2d.ts/Box2D/Box2D/Common/b2Math';
-import {b2BodyType} from 'box2d.ts/Box2D/Box2D/Dynamics/b2Body';
-import {b2World} from 'box2d.ts/Box2D/Box2D/Dynamics/b2World';
+import {b2Vec2} from '@flyover/box2d/Box2D/Box2D/Common/b2Math';
+import {b2BodyType} from '@flyover/box2d/Box2D/Box2D/Dynamics/b2Body';
+import {b2World} from '@flyover/box2d/Box2D/Box2D/Dynamics/b2World';
 import '../../../img/static_body_pattern.png';
 import '../../../img/texture1.png';
 import eventBus from '../../modules/eventBus';
