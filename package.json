@@ -39,7 +39,7 @@
     "fs": "^0.0.1-security",
     "howler": "^2.0.5",
     "html-webpack-plugin": "^2.30.1",
-    "jsdom": "^11.3.0",
+    "jsdom": "^11.7.0",
     "jstransformer-verbatim": "^1.1.1",
     "normalize.css": "^7.0.0",
     "pug": "^2.0.0-rc.4",

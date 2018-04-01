@@ -15,7 +15,7 @@ const babel = require('./webpack/babel');
 const MinifyPlugin = require('babel-minify-webpack-plugin');
 const fileLoader = require('./webpack/fileloader');
 const devServer = require('./webpack/devServer');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const PATHS = {
   src: path.join(__dirname, 'src'),

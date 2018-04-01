@@ -3,7 +3,6 @@
     "module": "es6",
     // "noImplicitAny": true,
     "target": "es6",
-    "moduleResolution": "node",
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true,
